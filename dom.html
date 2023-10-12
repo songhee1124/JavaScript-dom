@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+    <script src="dom.js"></script>
+  </head>
+  <body>
+    
+
+    <input type="button" value="click" id="btn-print" />
+
+    <hr>
+    <section id="s1">
+      <h1>노트 선택하기 방법 두개 </h1>
+      <div>
+      <input class="input" type="text" />
+      <input class="button" type="button" value="click" />
+    </div>
+    </section>              
+         
+    
+   <hr>
+    <section id="s2">
+      <h1>DOM 속성 다루기 :계산기 </h1>
+      <div>
+      <input class="x-input" type="text" value="0" />
+      <input class="y-input" type="text" value="0" />
+
+      <input class="button" type="button" value="덧셈" />
+      <span>계산 결과 : <span>0</span> </span>
+    </div>
+    </section> 
+    
+    <hr>
+    <section id="s3">
+      <h1><a href="http:www.naver.com">이벤트 객체 : 개선된 계산기</a> </h1>
+      <form action="">
+      <div class="box">
+      <input  type="text" value="0" dir="rtl"/> 
+      <!-- dir=rtl 방향 오른쪽부터  -->
+
+      <input class="num" type="button" value="%" />
+      <input class="num" type="button" value="CE" />
+      <input class="num" type="button" value="C" />
+      <input class="num" type="button" value="/" />
+
+      <input class="num" type="submit" value="7" />
+      <input class="num" type="button" value="8" />
+      <input class="num" type="button" value="9" />
+      <input class="num" type="button" value="*" />
+      
+      <input class="num" type="button" value="4" />
+      <input class="num" type="button" value="5" />
+      <input class="num" type="button" value="6" />
+      <input class="num" type="button" value="-" />
+
+      
+      <input class="num" type="button" value="1" />
+      <input class="num" type="button" value="2" />
+      <input class="num" type="button" value="3" />
+      <input class="num" type="button" value="+" />
+     
+      <input class="num" type="button" value="0" />
+      <input class="num" type="submit" value="=" />
+      <!-- 타입을 서밋으로 하면 post 로 페이지가 새로 로드됨 -->
+    </div>
+  </form>
+</section> 
+  <hr>
+  <section id="s4">
+    <h1>4. 스타일 다루기 : 값 입력과 동적으로 박스 스타일 변경</h1>
+    <div class="box">
+        <div class="tool-box">
+            <div>
+                <label>style : solid</label>
+                <select class="style-input">
+                    <option value="solid">solid</option>
+                    <option value="dashed">dashed</option>
+                    <option value="dotted">dotted</option>
+                </select>
+            </div>
+            <div>
+                <label for="">width : 0px</label>
+                <input class="width-input" type="range" min="0" max="100" value="1">
+            </div>
+            <div>
+                <label for="">radius : 0px</label>
+                <input class="radius-input" type="range" min="0" max="100" value="1">
+            </div>
+            <div>
+                <label for="">color : #000000</label>
+                <input class="color-input" type="color" value="#000000">
+            </div>
+            <div>
+                <div> output : </div>
+                <div class="output"></div>
+            </div>
+        </div>
+        <div class="preview-box">
+            <div class="item"></div>
+        </div>
+    </div>
+</section>
+
+<hr>
+<section id="s5">
+  <h1>5. 스타일 다루기 : 아이템 이동</h1>
+  <div  class="box">
+      <ul>
+          <li class="card-1th">1</li>
+          <li class="card-2th">2</li>
+          <li class="card-3th">3</li>
+      </ul>
+      <div class="btn-list">
+          <a class="btn-prev" href="">이전</a>
+          <a class="btn-next" href="">다음</a>
+      </div>
+  </div>
+</section>
+
+<hr>
+<section id="s5-1">
+  <h1> 카드 회전 숙제</h1>
+  <div  class="box">
+      <ul>
+          <li class="card-1th">1</li>
+          <li class="card-2th">2</li>
+          <li class="card-3th">3</li>
+      </ul>
+     
+  </div>
+</section>
+
+<hr>
+<section id="s6">
+  <h1>6. 스타일 다루기(classList) :아코디언 만들기</h1>
+  <div  class="box">
+    <h2 class="accordion-header ">제목1</h2>
+    <div class="accordion-content active">
+      <p>
+        Erat invidunt kasd ea consetetur dolores. Stet consetetur eos est gubergren lorem ipsum voluptua dolor sit. Eirmod sit et takimata.
+      </p>
+    </div>
+    <h2 class="accordion-header">제목2</h2>
+    <div class="accordion-content ">
+      <p>
+        At ut sed gubergren nonumy lorem at eirmod eirmod voluptua sadipscing, kasd erat amet ipsum ipsum invidunt vero. Est accusam.
+      </p>
+    </div>
+    <h2 class="accordion-header ">제목3</h2>
+    <div class="accordion-content ">
+      <p>
+        Ea accusam dolor dolor consetetur sadipscing est sit ipsum magna ipsum, magna lorem sadipscing gubergren amet amet. Eirmod takimata vero.
+      </p>
+    </div>
+    <h2 class="accordion-header">제목4</h2>
+    <div class="accordion-content ">
+      <p>
+        Ipsum voluptua eirmod dolor amet sea, amet sit diam et ipsum sit, sanctus et ut vero eirmod invidunt takimata. Sed.
+      </p>
+    </div>
+  </div>
+  </section>
+
+  <hr>
+<section id="s7">
+  <h1>7. 스타일 다루기(coputedStyle/...) :선택된 박스 이동</h1>
+    <div class="box">
+        <div class="src-item-list">
+          <div class="src-item item">1</div>
+          <div class="src-item item">2</div>
+          <div class="src-item item">3</div>
+        </div>
+
+        <div class="dst-item-list">
+          <div class="dst-item item" style="left:300px; top:10px;">a</div>
+          <div class="dst-item item" style="left:450px; top:160px;">b</div>
+          <div class="dst-item item" style="left:330px; top:250px;">c</div>
+        </div>
+    </div>
+    </section>
+  </body>
+</html>
